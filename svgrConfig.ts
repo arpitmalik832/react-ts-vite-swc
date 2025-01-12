@@ -1,8 +1,6 @@
-/**
- * SVGR configuration file.
- * @file The file is saved as `svgr.config.mjs`.
- */
-const config = {
+import { Config } from '@svgr/core';
+
+const config: Config = {
   prettier: true,
   svgo: true,
   exportType: 'named',
@@ -20,7 +18,6 @@ const config = {
   },
   titleProp: true,
   ref: true,
-  outputDir: 'dist/assets',
   icon: false,
 };
 
